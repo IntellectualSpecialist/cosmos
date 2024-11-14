@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
+  <head class="page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Космос</title>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-
+  <body class="page__body">
+    <h1 class="visually-hidden">Космос</h1>
+    <header class="main-header">
+      <div class="main-header__wrapper container">
+        <div class="main-header__logo logo">
+          <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Космос экосистема».">
+        </div>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Услуги</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Участники</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Медиацентр</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__search search">
+          <a class="search__button" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </div>
+        <ul class="main-header__user-list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--registry" href="#">Регистрация</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--login" href="#">Вход</a>
+          </li>
+        </ul>
+        <button class="main-header__burger burger js-toggle-button" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+          <span class="burger__icon"></span>
+        </button>
+      </div>
+    </header>
+    <main></main>
     <script type="module" src="js/main.js"></script>
   </body>
 
