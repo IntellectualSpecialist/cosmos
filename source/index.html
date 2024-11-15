@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head class="page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Космос</title>
+    <meta name="description" content="Платформа по поиску и предложению услуг в научно-производственной сфере на территории Свердловской области.">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -13,7 +14,7 @@
     <header class="main-header">
       <div class="main-header__wrapper container">
         <div class="main-header__logo logo">
-          <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Космос экосистема».">
+          <img src="/__spritemap#sprite-logo-view" width="180" height="37" alt="Логотип «Космос экосистема».">
         </div>
         <nav class="main-header__nav main-nav">
           <ul class="main-nav__list site-list">
@@ -28,26 +29,460 @@
             </li>
           </ul>
         </nav>
+        <ul class="main-header__user-list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--registry button button--secondary" href="#">Регистрация</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--login button button--icon" href="#">Вход</a>
+          </li>
+        </ul>
         <div class="main-header__search search">
           <a class="search__button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </div>
-        <ul class="main-header__user-list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--registry" href="#">Регистрация</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--login" href="#">Вход</a>
-          </li>
-        </ul>
         <button class="main-header__burger burger js-toggle-button" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
           <span class="burger__icon"></span>
         </button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__wrapper container">
+            <div class="hero__column">
+              <div class="hero__contacts">
+                <ul class="hero__contacts-list contacts-list">
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link contacts-list__link--wide" href="tel:+73431234567">+7 (343) 123-45-67</a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
+                  </li>
+                </ul>
+                <ul class="hero__social social-small">
+                  <li class="social-small__item">
+                    <a class="social-small__link social-small__link--tg" href="#">
+                      <span class="visually-hidden">Телеграм</span>
+                      <svg width="15" height="12" viewBox="0 0 15 12" role="img" aria-hidden="true" focusable="false">
+                        <use href="/__spritemap#sprite-tg-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-small__item">
+                    <a class="social-small__link social-small__link--vk" href="#">
+                      <span class="visually-hidden">Вконтакте</span>
+                      <svg width="20" height="12" viewBox="0 0 20 12" role="img" aria-hidden="true" focusable="false">
+                        <use href="/__spritemap#sprite-vk-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-small__item">
+                    <a class="social-small__link social-small__link--rt" href="#">
+                      <span class="visually-hidden">Рутьюб</span>
+                      <svg width="15" height="12" viewBox="0 0 15 12" role="img" aria-hidden="true" focusable="false">
+                        <use href="/__spritemap#sprite-rt-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="hero__list">
+                <li class="hero__item">
+                  <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-labelledby="electronics">
+                    <use href="/__spritemap#sprite-electronics-icon"></use>
+                  </svg>
+                  <span id="electronics">электроника</span>
+                </li>
+                <li class="hero__item">
+                  <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-labelledby="microelectronics">
+                    <use href="/__spritemap#sprite-microelectronics-icon"></use>
+                  </svg>
+                  <span id="microelectronics">микроэлектроника</span>
+                </li>
+                <li class="hero__item">
+                  <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-labelledby="robotics">
+                    <use href="/__spritemap#sprite-robotics-icon"></use>
+                  </svg>
+                  <span id="robotics">робототехника</span>
+                </li>
+                <li class="hero__item">
+                  <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-labelledby="instrumentation">
+                    <use href="/__spritemap#sprite-instrumentation-icon"></use>
+                  </svg>
+                  <span id="instrumentation">приборостроение</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__content">
+              <h2 class="hero__title">Технопарк</h2>
+              <p class="hero__description">Платформа по поиску и предложению услуг в сфере электроники, микроэлектроники, робототехники и приборостроения на территории Свердловской области</p>
+              <a class="hero__link button button--primary" href="#">Начать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats">
+        <h2 class="visually-hidden">Статистика</h2>
+        <div class="stats__inner">
+          <div class="stats__wrapper container">
+            <dl class="stats__list">
+              <div class="stats__item">
+                <dt class="stats__number">3 547</dt>
+                <dd class="stats__description">участников</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">24,8</dt>
+                <dd class="stats__description">млрд инвестиций</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">287</dt>
+                <dd class="stats__description">партнеров</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">143</dt>
+                <dd class="stats__description">персонал</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__inner">
+          <div class="news__wrapper container">
+            <h2 class="news__title title">
+              <span class="news__title-mobile">Медиацентр</span>
+              <span class="news__title-desktop">Новости</span>
+            </h2>
+            <div class="news__slider slider">
+              <div class="slider__swiper swiper">
+                <div class="slider__wrapper swiper-wrapper">
+                  <div class="slider__slide swiper-slide">
+                    <div class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <img src="#" srcset="#" width="300" height="200" alt="Фотография к новости.">
+                        </picture>
+                      </div>
+                      <div class="news-card__text">
+                        <time class="news-card__date" datetime="2024-06-07">пятница, 7 июня 2024 г.</time>
+                        <p class="news-card__description">Старость - время честности. Достигнув преклонных лет, люди подчас брезгуют условностями и “рубят правду-матку”...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__slide swiper-slide">
+                    <div class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <img src="#" srcset="#" width="300" height="200" alt="Фотография к новости.">
+                        </picture>
+                      </div>
+                      <div class="news-card__text">
+                        <time class="news-card__date" datetime="2024-06-07">пятница, 7 июня 2024 г.</time>
+                        <p class="news-card__description">Старость - время честности. Достигнув преклонных лет, люди подчас брезгуют условностями и “рубят правду-матку”...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__slide swiper-slide">
+                    <div class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <img src="#" srcset="#" width="300" height="200" alt="Фотография к новости.">
+                        </picture>
+                      </div>
+                      <div class="news-card__text">
+                        <time class="news-card__date" datetime="2024-06-07">пятница, 7 июня 2024 г.</time>
+                        <p class="news-card__description">Старость - время честности. Достигнув преклонных лет, люди подчас брезгуют условностями и “рубят правду-матку”...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__slide swiper-slide">
+                    <div class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <img src="#" srcset="#" width="300" height="200" alt="Фотография к новости.">
+                        </picture>
+                      </div>
+                      <div class="news-card__text">
+                        <time class="news-card__date" datetime="2024-06-07">пятница, 7 июня 2024 г.</time>
+                        <p class="news-card__description">Старость - время честности. Достигнув преклонных лет, люди подчас брезгуют условностями и “рубят правду-матку”...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__slide swiper-slide">
+                    <div class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <img src="#" srcset="#" width="300" height="200" alt="Фотография к новости.">
+                        </picture>
+                      </div>
+                      <div class="news-card__text">
+                        <time class="news-card__date" datetime="2024-06-07">пятница, 7 июня 2024 г.</time>
+                        <p class="news-card__description">Старость - время честности. Достигнув преклонных лет, люди подчас брезгуют условностями и “рубят правду-матку”...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__pagination swiper-pagination">
+                <button class="slider__pagination-button slider__pagination-button--active" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
+              </div>
+              <button class="slider__button slider__button--prev swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider__button slider__button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Cледующий слайд</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__inner">
+          <div class="features__wrapper container">
+            <h2 class="features__title title">Преимущества
+              <span>эко</span>системы
+            </h2>
+            <div class="features__tabs tabs">
+              <div class="tabs__list-wrapper">
+                <ul class="tabs__list">
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Условия вступления</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Финансовая поддержка</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Налоговые льготы</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Услуги</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button tabs__button--active" type="button">Юридическая помощь</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Условия вступления</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Финансовая поддержка</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Налоговые льготы</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Услуги</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                </div>
+                <div class="tabs__tab tabs__tab--current">
+                  <div class="text-content">
+                    <h3>Юридическая помощь</h3>
+                    <p>Правовая (юридическая) помощь — это профессиональная деятельность юристов, направленная на содействие гражданам и юридическим лицам в решении вопросов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="infrastructure">
+        <div class="infrastructure__inner">
+          <div class="infrastructure__wrapper container">
+            <h2 class="infrastructure__title title">Инфраструктура</h2>
+            <div class="infrastructure__tabs tabs tabs--alternative">
+              <div class="tabs__list-wrapper">
+                <ul class="tabs__list">
+                  <li class="tabs__item">
+                    <button class="tabs__button tabs__button--active" type="button">Индустриальные парки в Екатеринбурге</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Lorem ipsum dolor</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Lorem ipsum</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__button" type="button">Lorem ipsum dolor</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Индустриальные парки в Екатеринбурге</h3>
+                    <p>Мы развиваем сеть индустриальных площадок на территории региона с подготовленной инженерной инфраструктурой</p>
+                  </div>
+                  <div class="tabs__image">
+                    <picture>
+                      <img src="#" srcset="#" width="130" height="320" alt="Индустриальный парк.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                  <div class="tabs__image">
+                    <picture>
+                      <img src="#" srcset="#" width="130" height="320" alt="Индустриальный парк.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                  <div class="tabs__image">
+                    <picture>
+                      <img src="#" srcset="#" width="130" height="320" alt="Индустриальный парк.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <div class="text-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
+                    <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
+                  </div>
+                  <div class="tabs__image">
+                    <picture>
+                      <img src="#" srcset="#" width="130" height="320" alt="Индустриальный парк.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="banner">
+        <h2 class="visually-hidden">Пройдите регистрацию</h2>
+        <div class="banner__inner">
+          <div class="banner__wrapper container">
+            <div class="banner__logo logo logo--dark">
+              <img src="/__spritemap#sprite-logo-dark-view" width="274" height="53" alt="Логотип «Космос экосистема».">
+            </div>
+            <div class="banner__text">
+              <p class="banner__description">Пройдите регистрацию и получите доступ к научно - промышленному потенциалу Уральского региона.</p>
+              <button class="banner__button button button--primary" type="button">К регистрации</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper container">
+        <div class="main-footer__column">
+          <p class="main-footer__copyright">&copy; 2024 Экосистема “Космос”</p>
+          <ul class="main-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">
+                <span class="visually-hidden">Ютьюб</span>
+                <svg width="24" height="18" viewBox="0 0 24 18" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-yt-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">
+                <span class="visually-hidden">Телеграм</span>
+                <svg width="22" height="18" viewBox="0 0 22 18" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-tg-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="29" height="17" viewBox="0 0 29 17" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="main-footer__logo">
+            <img src="/__spritemap#sprite-logo-2-view" width="200" height="42" alt="Логотип «Корпорация развития среднего урала».">
+          </div>
+        </div>
+        <div class="main-footer__column">
+          <ul class="main-footer__nav site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Услуги</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Участники</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Медиацентр</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Личный кабинет</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск услуг</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__column">
+          <ul class="main-footer__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--wide" href="tel:+73431234567">+7 (343) 123-45-67</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:+79121234567">+7 (912) 123 45 67</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__column">
+          <ul class="main-footer__documents">
+            <li class="main-footer__document">
+              <a class="main-footer__link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="main-footer__document">
+              <a class="main-footer__link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="main-footer__document">
+              <a class="main-footer__link" href="#">Противодействие коррупции</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
