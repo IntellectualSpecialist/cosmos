@@ -1,0 +1,9 @@
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 17px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 148px 0 152px;
+  }
+}
