@@ -1,3 +1,41 @@
 .banner {
   display: none;
 }
+
+
+@media (min-width: $desktop-width) {
+  .banner {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 36px;
+  }
+
+  .banner__inner {
+    padding-top: 87px;
+    padding-bottom: 99px;
+    background: $linear-banner;
+  }
+
+  .banner__logo {
+    margin-bottom: 38.85px;
+  }
+
+  .banner__text {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 52px;
+  }
+
+  .banner__description {
+    max-width: 898px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+
+  .banner__button {
+    min-width: 241px;
+    margin-right: -12px;
+  }
+}

@@ -12,6 +12,8 @@
 }
 
 .site-list__link {
+  display: block;
+  padding: 5px 10px;
   line-height: normal;
   font-weight: 600;
   color: $base-white;
@@ -24,5 +26,30 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 80px;
+    row-gap: 20px;
+  }
+
+  .site-list__item {
+    margin-bottom: 0;
+  }
+
+  .site-list--light {
+    .site-list__item {
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    .site-list__link {
+      font-weight: 400;
+    }
   }
 }

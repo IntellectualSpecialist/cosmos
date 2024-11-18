@@ -97,7 +97,7 @@
     height: 8px;
     background-color: $pagination-color;
     opacity: 0.3;
-    border-radius: 4px;
+    border-radius: 50%;
   }
 
   &:hover,
@@ -120,5 +120,42 @@
 
   &--active::before {
     opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider.slider--no-js {
+    .slider__wrapper {
+      display: flex;
+      gap: 20px;
+    }
+
+    .slider__slide {
+      display: block;
+    }
+
+    .slider__slide:not(:nth-child(-n+3)) {
+      display: none;
+    }
+  }
+
+  .slider {
+    margin-left: 0;
+    padding: 0 30px;
+  }
+
+  .slider__pagination {
+    margin-top: 25px;
+  }
+
+  .slider__pagination-button {
+    width: 14px;
+    height: 14px;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+    }
   }
 }

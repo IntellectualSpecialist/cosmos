@@ -42,3 +42,26 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    &:not(.contacts-list--alternative) {
+      .contacts-list__link {
+        color: $base-text-color;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .contacts-list__link {
+    &--wide {
+      font-size: 18px;
+    }
+  }
+
+  .contacts-list--alternative {
+    .contacts-list__link--wide {
+      font-size: 24px;
+    }
+  }
+}

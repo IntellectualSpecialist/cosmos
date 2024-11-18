@@ -14,3 +14,32 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding-top: 19px;
+    padding-bottom: 17px;
+    background: none;
+  }
+
+  .features__inner {
+    background-image:
+      url("../../__spritemap#sprite-features-bg-view"),
+      $secondary-linear-alt;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .features__wrapper {
+    padding-top: 117px;
+    padding-bottom: 134.56px;
+  }
+
+  .features__title {
+    margin-bottom: 54px;
+
+    span {
+      display: inline;
+    }
+  }
+}

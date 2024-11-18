@@ -6,3 +6,20 @@
 .infrastructure__title {
   margin-bottom: 10px;
 }
+
+@media (min-width: $desktop-width) {
+  .infrastructure {
+    padding-top: 17.44px;
+    padding-bottom: 17px;
+  }
+
+  .infrastructure__inner {
+    padding-top: 87px;
+    padding-bottom: 67px;
+    background-color: $bg-grey;
+  }
+
+  .infrastructure__title {
+    margin-bottom: 65px;
+  }
+}

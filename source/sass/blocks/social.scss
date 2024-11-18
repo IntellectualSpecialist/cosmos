@@ -39,3 +39,14 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    &:not(.social--alternative) {
+      .social__link {
+        color: $social-icon-dark;
+        background-color: transparent;
+      }
+    }
+  }
+}

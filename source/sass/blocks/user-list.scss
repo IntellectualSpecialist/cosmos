@@ -7,3 +7,11 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px 30px;
+  }
+}

@@ -35,3 +35,38 @@
   margin-left: 26.5px;
   margin-right: -2px;
 }
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    padding: 21px 151px 22px 149px;
+  }
+
+  .main-header__logo {
+    order: 1;
+    margin-left: 8px;
+  }
+
+  .main-header__nav {
+    position: static;
+    order: 2;
+    display: block;
+    max-width: 642px;
+    margin-top: 4px;
+    margin-right: 54.5px;
+  }
+
+  .main-header__search {
+    order: 3;
+    margin-top: 3.4px;
+  }
+
+  .main-header__user-list {
+    order: 4;
+    margin-left: 40.5px;
+    margin-top: 2.9px;
+  }
+
+  .main-header__burger {
+    display: none;
+  }
+}

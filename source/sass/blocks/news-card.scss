@@ -26,3 +26,18 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+@media (min-width: $desktop-width) {
+  .news-card {
+    padding: 0;
+    border: none;
+  }
+
+  .news-card__text {
+    display: none;
+  }
+
+  .news-card__image {
+    margin-bottom: 0;
+  }
+}

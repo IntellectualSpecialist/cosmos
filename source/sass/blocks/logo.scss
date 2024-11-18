@@ -9,3 +9,25 @@
     object-fit: fill;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 180px;
+    height: 37.1px;
+
+    img {
+      width: 180px;
+      height: 37.1px;
+    }
+
+    &--dark {
+      width: 273.84px;
+      height: 53.15px;
+
+      img {
+        width: 273.84px;
+        height: 53.15px;
+      }
+    }
+  }
+}

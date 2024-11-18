@@ -14,3 +14,28 @@
 .news__title-desktop {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .news {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .news__inner {
+    padding-top: 71.96px;
+    padding-bottom: 129px;
+    background-color: $bg-grey;
+  }
+
+  .news__title {
+    margin-bottom: 71px;
+  }
+
+  .news__title-desktop {
+    display: inline;
+  }
+
+  .news__title-mobile {
+    display: none;
+  }
+}

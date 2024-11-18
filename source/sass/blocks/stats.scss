@@ -63,3 +63,42 @@
   font-weight: 600;
   background-color: $primary-color;
 }
+
+@media (min-width: $desktop-width) {
+  .stats {
+    padding-top: 16px;
+    padding-bottom: 0;
+    overflow: visible;
+  }
+
+  .stats__inner {
+    padding-top: 90px;
+    padding-bottom: 71.96px;
+    background-color: $bg-grey;
+  }
+
+  .stats__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .stats__item {
+    justify-content: flex-start;
+    gap: 0;
+    width: 100%;
+    min-height: 234px;
+    padding: 50px;
+    padding-top: 81px;
+  }
+
+  .stats__number {
+    font-size: 35px;
+  }
+
+  .stats__description {
+    font-size: 18px;
+  }
+}

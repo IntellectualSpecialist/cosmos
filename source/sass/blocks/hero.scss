@@ -53,10 +53,109 @@
 
 .hero__description {
   margin: 0;
+  font-size: 16px;
   line-height: normal;
   font-weight: 500;
 }
 
+.hero__description-desktop {
+  display: none;
+}
+
 .hero__link {
   margin-top: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding: 30px 26px 15px 30px;
+  }
+
+  .hero__inner {
+    display: flex;
+    min-height: 549px;
+    color: $primary-color;
+    background:
+      url("../../__spritemap#sprite-figures-desktop-view"),
+      image-set(
+        url("../img/robot-desktop@1x.webp") type("image/webp") 1x,
+        url("../img/robot-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/robot-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../img/robot-desktop@2x.jpg") type("image/jpeg") 2x
+      ),
+      $secondary-linear;
+    background-repeat: no-repeat;
+    background-position:
+      left top,
+      right top;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: auto;
+    padding: 0 151px 0 149px;
+  }
+
+  .hero__column {
+    display: block;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background: none;
+  }
+
+  .hero__contacts {
+    margin-bottom: 121px;
+  }
+
+  .hero__list {
+    @include list-reset;
+
+    display: block;
+    color: $base-white;
+  }
+
+  .hero__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    line-height: normal;
+    font-weight: 600;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .hero__content {
+    width: 507px;
+    padding: 184.87px 73px 30px 0;
+    background: none;
+  }
+
+  .hero__title {
+    margin-bottom: 3px;
+    font-size: 50px;
+    text-transform: none;
+  }
+
+  .hero__description {
+    font-size: 18px;
+  }
+
+  .hero__description-desktop {
+    display: inline;
+  }
+
+  .hero__description-mobile {
+    display: none;
+  }
+
+  .hero__link {
+    min-width: 175px;
+    margin-top: 56px;
+  }
 }

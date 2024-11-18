@@ -1,10 +1,4 @@
 .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-
   &:hover,
   &:focus-visible {
     opacity: 0.6;
@@ -16,10 +10,28 @@
     opacity: 0.3;
   }
 
+  .search__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+
   svg,
   img {
     display: block;
     width: 23px;
     height: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search {
+    svg,
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
