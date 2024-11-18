@@ -1,0 +1,28 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-list__link {
+  line-height: normal;
+  font-weight: 600;
+  color: $base-white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

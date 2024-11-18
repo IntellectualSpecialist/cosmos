@@ -1,0 +1,121 @@
+.tabs__list-wrapper {
+  margin-bottom: 10px;
+}
+
+.tabs__trigger {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  padding-right: 30px;
+  color: $base-white;
+  line-height: normal;
+  font-weight: 600;
+  text-align: left;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21.42px;
+    right: 10.77px;
+    width: 12.23px;
+    height: 7.16px;
+    background-image: url("../../__spritemap#sprite-arrow-down-icon-view");
+    background-size: 12.23px 7.16px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: rgba($base-white, 0.6);
+  }
+}
+
+.tabs__list {
+  @include list-reset;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.tabs__button {
+  width: 100%;
+  padding: 15px;
+  padding-right: 10.77px;
+  color: $primary-color;
+  line-height: normal;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+  background-color: $base-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: $base-white;
+    background-color: $primary-color;
+  }
+
+  &:active {
+    color: rgba($base-white, 0.6);
+  }
+
+  &--active {
+    color: $base-white;
+    background-color: $primary-color;
+  }
+}
+
+.tabs__tab {
+  display: none;
+  padding: 10px;
+  background-color: $base-white;
+  border: 1px solid $grey-alt;
+
+  &--current {
+    display: block;
+  }
+}
+
+.tabs__text-content {
+  padding: 10px;
+  border: 1px solid $border-color;
+
+  h3 {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.tabs__text {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+.tabs__image {
+  margin-left: auto;
+  width: fit-content;
+
+  img {
+    display: block;
+    object-fit: fill;
+  }
+}
+
+.tabs--alternative {
+  .tabs__list {
+    outline: 1px solid $border-color;
+  }
+
+  .tabs__image {
+    width: 100%;
+  }
+
+  .tabs__image img {
+    width: 100%;
+  }
+}

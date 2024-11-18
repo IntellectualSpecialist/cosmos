@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-right: 25px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 4.5px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../__spritemap#sprite-title-decor-view");
+    background-size: 15px 15px;
+  }
+}

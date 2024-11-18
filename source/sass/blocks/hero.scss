@@ -1,0 +1,62 @@
+.hero {
+  padding: 20px 18px 15px 17px;
+}
+
+.hero__wrapper {
+  padding: 0;
+}
+
+.hero__column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 200px;
+  padding: 108px 12px 27px 182px;
+  background-color: $primary-color;
+  background-image:
+    url("../../__spritemap#sprite-figures-view"),
+    image-set(
+      url("../img/robot@1x.webp") type("image/webp") 1x,
+      url("../img/robot@2x.webp") type("image/webp") 2x,
+      url("../img/robot@1x.png") type("image/png") 1x,
+      url("../img/robot@2x.png") type("image/png") 2x
+    );
+  background-repeat: no-repeat;
+}
+
+.hero__contacts {
+  text-align: right;
+}
+
+.hero__social {
+  margin-top: 5px;
+}
+
+.hero__list {
+  display: none;
+}
+
+.hero__content {
+  padding: 23px 17px 40px 19px;
+  background: $secondary-linear;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.hero__description {
+  margin: 0;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.hero__link {
+  margin-top: 20px;
+}

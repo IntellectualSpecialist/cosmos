@@ -1,0 +1,53 @@
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 600;
+  color: $base-white;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+.button--primary {
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  background-color: $primary-color;
+}
+
+.button--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+
+  svg,
+  img {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .button {
+    &--icon {
+      span {
+        position: absolute;
+        opacity: 0;
+      }
+    }
+  }
+}

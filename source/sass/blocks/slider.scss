@@ -1,0 +1,124 @@
+.slider {
+  position: relative;
+  min-width: 351.5px;
+  width: 100%;
+  margin-left: -5.75px;
+  padding: 10px 17px 20px;
+}
+
+.slider--no-js {
+  .slider__slide:not(:first-child) {
+    display: none;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  width: 13.75px;
+  height: 19px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 8.75px;
+    height: 15px;
+    background-color: $arrow-slider;
+    mask-image: url("../../__spritemap#sprite-arrow-icon-view");
+    mask-repeat: no-repeat;
+    mask-size: 8.75px 15px;
+    mask-position: center;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    left: 0;
+  }
+
+  &--prev::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  &--next {
+    right: 0;
+  }
+}
+
+.slider__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.slider__pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: $pagination-color;
+    opacity: 0.3;
+    border-radius: 4px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &--active::before {
+    opacity: 1;
+  }
+}

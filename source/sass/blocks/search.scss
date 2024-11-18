@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  svg,
+  img {
+    display: block;
+    width: 23px;
+    height: 23px;
+  }
+}

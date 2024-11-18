@@ -19,9 +19,9 @@
     <header class="main-header">
       <div class="main-header__wrapper container">
         <div class="main-header__logo logo">
-          <img src="/__spritemap#sprite-logo-view" width="180" height="37" alt="Логотип «Космос экосистема».">
+          <img src="/__spritemap#sprite-logo-view" width="146" height="30" alt="Логотип «Космос экосистема».">
         </div>
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-header__nav--hidden main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">Услуги</a>
@@ -39,12 +39,20 @@
             <a class="user-list__link user-list__link--registry button button--secondary" href="#">Регистрация</a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--login button button--icon" href="#">Вход</a>
+            <a class="user-list__link user-list__link--login button button--icon" href="#">
+              <svg width="15" height="14" viewBox="0 0 15 14" role="img" aria-labelledby="enter">
+                <use href="/__spritemap#sprite-fingerprint-icon"></use>
+              </svg>
+              <span id="enter">Вход</span>
+            </a>
           </li>
         </ul>
         <div class="main-header__search search">
-          <a class="search__button" href="#">
-            <span class="visually-hidden">Поиск</span>
+          <a class="search__link" href="#">
+            <svg width="23" height="23" viewBox="0 0 23 23" role="img" aria-labelledby="search">
+              <use href="/__spritemap#sprite-loupe-icon"></use>
+            </svg>
+            <span class="visually-hidden" id="search">Поиск</span>
           </a>
         </div>
         <button class="main-header__burger burger js-toggle-button" type="button">
@@ -64,28 +72,28 @@
                     <a class="contacts-list__link contacts-list__link--wide" href="tel:+73431234567">+7 (343) 123-45-67</a>
                   </li>
                   <li class="contacts-list__item">
-                    <a class="contacts-list__link" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
+                    <a class="contacts-list__link contacts-list__link--decoration" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
                   </li>
                 </ul>
-                <ul class="hero__social social-small">
-                  <li class="social-small__item">
-                    <a class="social-small__link social-small__link--tg" href="#">
+                <ul class="hero__social social">
+                  <li class="social__item">
+                    <a class="social__link social__link--tg" href="#">
                       <span class="visually-hidden">Телеграм</span>
                       <svg width="15" height="12" viewBox="0 0 15 12" role="img" aria-hidden="true" focusable="false">
                         <use href="/__spritemap#sprite-tg-icon"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-small__item">
-                    <a class="social-small__link social-small__link--vk" href="#">
+                  <li class="social__item">
+                    <a class="social__link social__link--vk" href="#">
                       <span class="visually-hidden">Вконтакте</span>
                       <svg width="20" height="12" viewBox="0 0 20 12" role="img" aria-hidden="true" focusable="false">
                         <use href="/__spritemap#sprite-vk-icon"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-small__item">
-                    <a class="social-small__link social-small__link--rt" href="#">
+                  <li class="social__item">
+                    <a class="social__link social__link--rt" href="#">
                       <span class="visually-hidden">Рутьюб</span>
                       <svg width="15" height="12" viewBox="0 0 15 12" role="img" aria-hidden="true" focusable="false">
                         <use href="/__spritemap#sprite-rt-icon"></use>
@@ -161,7 +169,7 @@
               <span class="news__title-mobile">Медиацентр</span>
               <span class="news__title-desktop">Новости</span>
             </h2>
-            <div class="news__slider slider">
+            <div class="news__slider slider slider--no-js">
               <div class="slider__swiper swiper">
                 <div class="slider__wrapper swiper-wrapper">
                   <div class="slider__slide swiper-slide">
@@ -184,7 +192,7 @@
                     <div class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <source width="300" height="200" type="image/webp" srcset="img/news-2@1x.webp, img/news-2.webp 2x">
+                          <source width="300" height="200" type="image/webp" srcset="img/news-2@1x.webp, img/news-2@2x.webp 2x">
                           <img src="img/news-2@1x.jpg" srcset="img/news-2@2x.jpg 2x" width="300" height="200" alt="Фотография к новости.">
                         </picture>
                       </div>
@@ -198,7 +206,7 @@
                     <div class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <source width="300" height="200" type="image/webp" srcset="img/news-3@1x.webp, img/news-3.webp 2x">
+                          <source width="300" height="200" type="image/webp" srcset="img/news-3@1x.webp, img/news-3@2x.webp 2x">
                           <img src="img/news-3@1x.jpg" srcset="img/news-3@2x.jpg 2x" width="300" height="200" alt="Фотография к новости.">
                         </picture>
                       </div>
@@ -228,7 +236,7 @@
                     <div class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <source width="300" height="200" type="image/webp" srcset="img/news-2@1x.webp, img/news-2.webp 2x">
+                          <source width="300" height="200" type="image/webp" srcset="img/news-2@1x.webp, img/news-2@2x.webp 2x">
                           <img src="img/news-2@1x.jpg" srcset="img/news-2@2x.jpg 2x" width="300" height="200" alt="Фотография к новости.">
                         </picture>
                       </div>
@@ -251,7 +259,7 @@
                   <span class="visually-hidden">Слайд 3</span>
                 </button>
               </div>
-              <button class="slider__button slider__button--prev swiper-button-prev" type="button">
+              <button class="slider__button slider__button--prev swiper-button-prev" type="button" disabled>
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
               <button class="slider__button slider__button--next swiper-button-next" type="button">
@@ -269,7 +277,8 @@
             </h2>
             <div class="features__tabs tabs">
               <div class="tabs__list-wrapper">
-                <ul class="tabs__list">
+                <button class="tabs__trigger">Юридическая помощь</button>
+                <ul class="tabs__list tabs__list--hidden">
                   <li class="tabs__item">
                     <button class="tabs__button" type="button">Условия вступления</button>
                   </li>
@@ -290,7 +299,7 @@
               <div class="tabs__content">
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Условия вступления</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -302,7 +311,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Финансовая поддержка</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -314,7 +323,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Налоговые льготы</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -326,7 +335,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Услуги</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -338,7 +347,7 @@
                 </div>
                 <div class="tabs__tab tabs__tab--current">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Юридическая помощь</h3>
                       <p>Правовая (юридическая) помощь — это профессиональная деятельность юристов, направленная на содействие гражданам и юридическим лицам в решении вопросов</p>
                     </div>
@@ -358,7 +367,8 @@
             <h2 class="infrastructure__title title">Инфраструктура</h2>
             <div class="infrastructure__tabs tabs tabs--alternative">
               <div class="tabs__list-wrapper">
-                <ul class="tabs__list">
+                <button class="tabs__trigger">Индустриальные парки в Екатеринбурге</button>
+                <ul class="tabs__list tabs__list--hidden">
                   <li class="tabs__item">
                     <button class="tabs__button tabs__button--active" type="button">Индустриальные парки в Екатеринбурге</button>
                   </li>
@@ -374,9 +384,9 @@
                 </ul>
               </div>
               <div class="tabs__content">
-                <div class="tabs__tab">
+                <div class="tabs__tab tabs__tab--current">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Индустриальные парки в Екатеринбурге</h3>
                       <p>Мы развиваем сеть индустриальных площадок на территории региона с подготовленной инженерной инфраструктурой</p>
                     </div>
@@ -392,7 +402,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Lorem ipsum dolor</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -409,7 +419,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Lorem ipsum</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -426,7 +436,7 @@
                 </div>
                 <div class="tabs__tab">
                   <article class="tabs__text-content">
-                    <div class="text-content">
+                    <div class="tabs__text text-content">
                       <h3>Lorem ipsum dolor</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis maximus metus. Morbi urna elit, pellentesque et arcu lacinia, faucibus tempor eros. Nullam semper tellus erat, sit amet ultrices libero mollis cursus. Nunc tincidunt sed magna eu consequat. Maecenas euismod justo ex, quis facilisis nunc vehicula ut. Nulla molestie, magna at mollis lacinia, massa enim ornare nulla, condimentum accumsan orci dolor id justo</p>
                       <p>In tempor euismod diam vestibulum dapibus. In convallis elit tempus nisl mattis, sit amet bibendum risus dapibus. Pellentesque ac neque vel elit gravida pharetra interdum quis enim. Integer luctus sem sit amet condimentum convallis. Fusce consectetur placerat mauris, vel blandit quam dignissim eu.</p>
@@ -464,8 +474,8 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper container">
         <div class="main-footer__column">
-          <p class="main-footer__copyright">&copy; 2024 Экосистема “Космос”</p>
-          <ul class="main-footer__social social">
+          <p class="main-footer__copyright">&copy; 2024 Экосистема «Космос»</p>
+          <ul class="main-footer__social social social--alternative">
             <li class="social__item">
               <a class="social__link social__link--yt" href="#">
                 <span class="visually-hidden">Ютьюб</span>
@@ -518,7 +528,7 @@
           </ul>
         </div>
         <div class="main-footer__column">
-          <ul class="main-footer__contacts-list contacts-list">
+          <ul class="main-footer__contacts-list contacts-list contacts-list--alternative">
             <li class="contacts-list__item">
               <a class="contacts-list__link contacts-list__link--wide" href="tel:+73431234567">+7 (343) 123-45-67</a>
             </li>
@@ -526,7 +536,7 @@
               <a class="contacts-list__link" href="tel:+79121234567">+7 (912) 123 45 67</a>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__link" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
+              <a class="contacts-list__link contacts-list__link--decoration" href="mailto:info@kosmos.ru">info@kosmos.ru</a>
             </li>
           </ul>
         </div>

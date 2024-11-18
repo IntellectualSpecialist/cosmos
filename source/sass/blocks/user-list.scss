@@ -1,0 +1,9 @@
+.user-list {
+  @include list-reset;
+}
+
+@media (max-width: $mobile-width-only) {
+  .user-list__link--registry {
+    display: none;
+  }
+}

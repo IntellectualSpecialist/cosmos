@@ -1,0 +1,28 @@
+.news-card {
+  min-width: 320px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $lite-grey;
+}
+
+.news-card__image {
+  margin-bottom: 5px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.news-card__date {
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.news-card__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
