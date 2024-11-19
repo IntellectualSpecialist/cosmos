@@ -1,5 +1,9 @@
 .site-list {
   @include list-reset;
+
+  &:not(.site-list--light) {
+    padding: 20px;
+  }
 }
 
 .site-list__item {
@@ -36,6 +40,10 @@
     align-items: flex-start;
     column-gap: 80px;
     row-gap: 20px;
+
+    &:not(.site-list--light) {
+      padding: 0;
+    }
   }
 
   .site-list__item {

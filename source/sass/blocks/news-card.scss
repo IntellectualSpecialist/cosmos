@@ -11,6 +11,8 @@
   img {
     display: block;
     width: 100%;
+    aspect-ratio: 300 / 200;
+    object-fit: cover;
   }
 }
 

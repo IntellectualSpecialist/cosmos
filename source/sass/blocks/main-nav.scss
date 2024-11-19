@@ -1,11 +1,9 @@
 .main-nav {
-  padding: 20px;
   background-color: $primary-color;
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding: 0;
     background-color: transparent;
   }
 }

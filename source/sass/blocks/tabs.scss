@@ -1,4 +1,5 @@
 .tabs__list-wrapper {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -35,6 +36,12 @@
 
 .tabs__list {
   @include list-reset;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  outline: 1px solid $border-color;
 
   &--hidden {
     display: none;
@@ -107,10 +114,6 @@
 }
 
 .tabs--alternative {
-  .tabs__list {
-    outline: 1px solid $border-color;
-  }
-
   .tabs__image {
     width: 100%;
   }
@@ -136,6 +139,7 @@
   }
 
   .tabs__list {
+    position: static;
     display: block;
   }
 

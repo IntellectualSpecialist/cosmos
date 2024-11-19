@@ -19,6 +19,7 @@
   top: 100%;
   left: 0;
   right: 0;
+  height: 0;
   overflow: hidden;
   transition: 0.2s ease-in;
 
@@ -50,6 +51,7 @@
     position: static;
     order: 2;
     display: block;
+    height: auto;
     max-width: 642px;
     margin-top: 4px;
     margin-right: 54.5px;
