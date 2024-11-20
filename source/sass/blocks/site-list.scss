@@ -18,10 +18,11 @@
 .site-list__link {
   display: block;
   padding: 5px 10px;
-  line-height: normal;
+  line-height: 20px;
   font-weight: 600;
   color: $base-white;
   text-decoration: none;
+
 
   &:hover,
   &:focus-visible {

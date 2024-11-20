@@ -45,7 +45,7 @@
   margin: 0;
   margin-bottom: 20px;
   font-size: 30px;
-  line-height: normal;
+  line-height: 37px;
   font-weight: 700;
   text-transform: uppercase;
   color: $primary-color;
@@ -54,7 +54,7 @@
 .hero__description {
   margin: 0;
   font-size: 16px;
-  line-height: normal;
+  line-height: 20px;
   font-weight: 500;
 }
 
@@ -103,6 +103,7 @@
     display: block;
     padding-top: 43px;
     padding-bottom: 43px;
+    padding-right: 0;
     background: none;
   }
 
@@ -122,7 +123,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 5px;
-    line-height: normal;
+    line-height: 20px;
     font-weight: 600;
 
     &:last-child {
@@ -139,11 +140,14 @@
   .hero__title {
     margin-bottom: 3px;
     font-size: 50px;
+    line-height: 61px;
     text-transform: none;
+    letter-spacing: -3.5px;
   }
 
   .hero__description {
     font-size: 18px;
+    line-height: 22px;
   }
 
   .hero__description-desktop {

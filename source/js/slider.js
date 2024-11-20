@@ -2,15 +2,15 @@ import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 
-const slidesPerViewCount = {
-  mobile: 1,
-  tablet: 2,
-  desktop: 3,
+const SlidesPerViewCount = {
+  MOBILE: 1,
+  TABLET: 2,
+  DESKTOP: 3,
 };
 
-const spaceBetweenValue = {
-  tablet: 18,
-  desktop: 30,
+const SpaceBetweenValue = {
+  TABLET: 18,
+  DESKTOP: 20,
 };
 
 const sliderElement = document.querySelector('.slider');
@@ -28,7 +28,7 @@ if (sliderElement) {
 
 const slider = new Swiper(swiperElement, {
   modules: [Navigation, Pagination],
-  slidesPerView: slidesPerViewCount.mobile,
+  slidesPerView: SlidesPerViewCount.MOBILE,
   loop: false,
   init: false,
   allowTouchMove: true,
@@ -50,13 +50,13 @@ const slider = new Swiper(swiperElement, {
   },
   breakpoints: {
     768: {
-      slidesPerView: slidesPerViewCount.tablet,
-      spaceBetween: spaceBetweenValue.tablet,
+      slidesPerView: SlidesPerViewCount.TABLET,
+      spaceBetween: SpaceBetweenValue.TABLET,
       allowTouchMove: true,
     },
     1440: {
-      slidesPerView: slidesPerViewCount.desktop,
-      spaceBetween: spaceBetweenValue.desktop,
+      slidesPerView: SlidesPerViewCount.DESKTOP,
+      spaceBetween: SpaceBetweenValue.DESKTOP,
       allowTouchMove: false,
     },
   },

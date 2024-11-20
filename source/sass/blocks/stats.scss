@@ -1,7 +1,6 @@
 .stats {
   padding-top: 15px;
   padding-bottom: 15px;
-  overflow-x: hidden;
 }
 
 .stats__list {
@@ -17,13 +16,14 @@
 .stats__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   flex-shrink: 0;
   width: 200px;
   min-height: 200px;
   padding: 43px;
+  padding-top: 61px;
   color: $base-white;
   text-align: center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
   max-width: 128px;
   font-family: $font-secondary;
   font-size: 30px;
-  line-height: normal;
+  line-height: 38px;
   font-weight: 700;
   color: $secondary-color;
   background-color: $primary-color;
@@ -59,7 +59,8 @@
 .stats__description {
   max-width: 128px;
   margin: 0;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   background-color: $primary-color;
 }
@@ -96,9 +97,11 @@
 
   .stats__number {
     font-size: 35px;
+    line-height: 44px;
   }
 
   .stats__description {
     font-size: 18px;
+    line-height: 22px;
   }
 }

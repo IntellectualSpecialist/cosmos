@@ -17,6 +17,7 @@
 }
 
 .news-card__date {
+  display: block;
   margin-bottom: 5px;
   font-size: 13px;
   line-height: 18px;
@@ -41,5 +42,11 @@
 
   .news-card__image {
     margin-bottom: 0;
+
+    img {
+      width: 360px;
+      height: 290px;
+      aspect-ratio: 360 / 290;
+    }
   }
 }

@@ -3,7 +3,7 @@
   padding: 8px 15px;
   font-family: $font-primary;
   font-size: 14px;
-  line-height: normal;
+  line-height: 17px;
   font-weight: 600;
   color: $base-white;
   text-decoration: none;
@@ -61,11 +61,12 @@
     padding: 18px 22px;
     min-height: 33px;
     font-size: 12px;
-    line-height: normal;
+    line-height: 15px;
   }
 
   .button--primary {
     font-size: 20px;
+    line-height: 24px;
     font-weight: 600;
   }
 

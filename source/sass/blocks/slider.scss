@@ -17,6 +17,7 @@
   top: 50%;
   width: 13.75px;
   height: 19px;
+  margin-top: -14px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -76,7 +77,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .slider__pagination-button {
@@ -141,7 +142,15 @@
 
   .slider {
     margin-left: 0;
-    padding: 0 30px;
+    padding: 0 27px 0 34px;
+  }
+
+  .slider__button {
+    margin-top: -18px;
+
+    &--next {
+      right: -3px;
+    }
   }
 
   .slider__pagination {

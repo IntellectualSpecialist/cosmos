@@ -1,5 +1,9 @@
 .user-list {
   @include list-reset;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -10,8 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    display: flex;
-    align-items: flex-start;
     gap: 20px 30px;
   }
 }

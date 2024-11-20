@@ -2,10 +2,14 @@
   @include list-reset;
 }
 
+.contacts-list__item {
+  margin-bottom: 5px;
+}
+
 .contacts-list__link {
   display: inline-block;
   font-size: 14px;
-  line-height: normal;
+  line-height: 17px;
   color: $base-white;
   text-decoration: none;
   background-color: $primary-color;
@@ -21,6 +25,7 @@
 
   &--wide {
     font-size: 16px;
+    line-height: 20px;
     font-weight: 600;
   }
 
@@ -40,6 +45,7 @@
 
   .contacts-list__link {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -53,15 +59,25 @@
     }
   }
 
+  .contacts-list__item {
+    margin-bottom: 3px;
+  }
+
   .contacts-list__link {
     &--wide {
       font-size: 18px;
+      line-height: 22px;
     }
   }
 
   .contacts-list--alternative {
+    .contacts-list__item {
+      margin-bottom: 14px;
+    }
+
     .contacts-list__link--wide {
       font-size: 24px;
+      line-height: 29px;
     }
   }
 }

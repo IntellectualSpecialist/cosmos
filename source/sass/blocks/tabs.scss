@@ -9,7 +9,8 @@
   padding: 15px;
   padding-right: 30px;
   color: $base-white;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   text-align: left;
   background-color: $primary-color;
@@ -20,12 +21,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 21.42px;
+    top: 50%;
     right: 10.77px;
     width: 12.23px;
     height: 7.16px;
     background-image: url("../../__spritemap#sprite-arrow-down-icon-view");
     background-size: 12.23px 7.16px;
+    transform: translateY(-50%);
   }
 
   &:hover,
@@ -53,7 +55,7 @@
   padding: 15px;
   padding-right: 10.77px;
   color: $primary-color;
-  line-height: normal;
+  line-height: 20px;
   font-weight: 600;
   text-align: left;
   border: none;
@@ -79,7 +81,7 @@
 
 .tabs__tab {
   display: none;
-  padding: 10px;
+  padding: 9px 9px 8px;
   background-color: $base-white;
   border: 1px solid $grey-alt;
 
@@ -154,6 +156,7 @@
   .tabs__button {
     padding: 28px 20px;
     font-size: 20px;
+    line-height: 24px;
     text-transform: uppercase;
 
     &--active {
@@ -175,7 +178,7 @@
   .tabs__text-content {
     padding: 60px;
     padding-bottom: 68px;
-    min-height: 460px;
+    min-height: 459px;
 
     h3 {
       position: static;
@@ -197,6 +200,8 @@
 
     .tabs__list {
       display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
       column-gap: 18px;
       outline: none;
     }
@@ -208,6 +213,7 @@
     .tabs__button {
       padding: 20px;
       font-size: 16px;
+      line-height: 20px;
       font-weight: 600;
       text-transform: none;
       border: 1px solid $border-color;
@@ -240,6 +246,7 @@
       display: flex;
       padding: 60px;
       border: none;
+      min-height: 454px;
     }
 
     .tabs__text {
